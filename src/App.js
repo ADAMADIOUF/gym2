@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react'
+import Products from './components/Products'
+import Navbar from './components/Navbar'
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import Home from './components/Home'
+import ClassShedule from "./components/ClassSchedule"
+import ClassSchedule from './components/ClassSchedule'
+import BookingForm from './components/BookingForm'
+import MemberShip from './components/MemperShip'
+import LocationsForm from './components/LocationsForm'
+import Footer from './components/Footer'
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/schedule' element={<ClassSchedule />} />
+        <Route path='/booking-form' element={<BookingForm />} />
+        <Route path='/membership' element={<MemberShip />} />
+        <Route path='/locations' element={<LocationsForm />} />
+      </Routes>
+      {/* <Footer/> */}
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
