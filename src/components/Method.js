@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 const Method = () => {
   return (
     <div className='method'>
-      <div className='bg3'></div>
       <div className='section-center'>
         <div className='method-container'>
           <article>

@@ -9,6 +9,7 @@ import BookingForm from './components/BookingForm'
 import MemberShip from './components/MemperShip'
 import LocationsForm from './components/LocationsForm'
 import Footer from './components/Footer'
+import SignupForm from './components/SignupForm'
 const App = () => {
   return (
     <BrowserRouter>
@@ -19,8 +20,9 @@ const App = () => {
         <Route path='/booking-form' element={<BookingForm />} />
         <Route path='/membership' element={<MemberShip />} />
         <Route path='/locations' element={<LocationsForm />} />
+        <Route path='/signup-form' element={<SignupForm />} />
       </Routes>
-      {/* <Footer/> */}
+      <Footer />
     </BrowserRouter>
   )
 }

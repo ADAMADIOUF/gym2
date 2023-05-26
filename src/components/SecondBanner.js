@@ -29,7 +29,7 @@ const SecondBanner = () => {
             you to develop a customized workout plan, track your progress, and
             make necessary adjustments to keep you on the path to success.
           </p>
-          <button>
+          <button className='btn'>
            learn more
           </button>
         </div>

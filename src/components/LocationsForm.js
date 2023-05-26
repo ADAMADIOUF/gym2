@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
 const LocationsForm = () => {
+  const location = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location])
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
