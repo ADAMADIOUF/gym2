@@ -609,7 +609,9 @@ margin-top: 0.5rem;
   grid-gap: 20px;
   position: relative;
 }
-
+.products img{
+  width: 100%;
+}
 @media (max-width: 767px) {
   .products {
     grid-template-columns: 1fr;
