@@ -1,6 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 
 function SignupForm() {
+ const location = useLocation()
+ useEffect(() => {
+   window.scrollTo(0, 0)
+ }, [location])
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
